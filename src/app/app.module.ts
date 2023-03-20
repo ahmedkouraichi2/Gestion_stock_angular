@@ -11,6 +11,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SharedComponent } from './components/shared/shared.component';
 import { UserComponent } from './components/user/user.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ContentComponent } from './components/content/content.component';
+import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MenuComponent,
     SharedComponent,
     UserComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContentComponent,
+    SideNavbarComponent
   ],
   imports: [
     BrowserModule,
