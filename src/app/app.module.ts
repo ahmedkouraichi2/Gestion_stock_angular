@@ -13,7 +13,8 @@ import { UserComponent } from './components/user/user.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContentComponent } from './components/content/content.component';
 import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,9 @@ import { SideNavbarComponent } from './components/side-navbar/side-navbar.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
