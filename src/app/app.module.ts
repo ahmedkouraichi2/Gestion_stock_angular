@@ -15,6 +15,7 @@ import { ContentComponent } from './components/content/content.component';
 import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     UserComponent,
     NavbarComponent,
     ContentComponent,
-    SideNavbarComponent
+    SideNavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

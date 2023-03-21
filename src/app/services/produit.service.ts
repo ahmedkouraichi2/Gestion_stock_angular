@@ -3,11 +3,12 @@ import { Product } from '../product';
 import { Observable } from 'rxjs';
 
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class ProduitService {
-  api :string = 'API_URLS' ;
+   api :string = environment.api_url ;
  private PRODUITS :Product[] = [] ;
   constructor(private http :HttpClient) {
     let p1 :Product = new Product('Livre' , 20 ,20);

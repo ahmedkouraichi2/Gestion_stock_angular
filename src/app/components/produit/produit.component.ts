@@ -31,11 +31,9 @@ export class ProduitComponent implements OnInit {
   }
 
   loadProduit(){
-     this.produitService.getProduits().subscribe(
-        data =>{this.produits = data},
-        Error =>{console.log("Ah error ")},
-        () =>{console.log('loading produits was done ')
-     )
+     this.produitService.getProduits();
+
+
   }
 
   addProduit(){
